@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | Personal Finance Tracker</title>
+    <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+<div class="page-center">
+<div class="card wide">
+    <h2 id="welcomeText"></h2>
+
+    <div class="dashboard-menu">
+    <div class="menu-item" onclick="goTo('expenses.html')">
+        💸 Expenses
+    </div>
+
+    <div class="menu-item" onclick="goTo('income.html')">
+        💰 Income
+    </div>
+
+    <div class="menu-item" onclick="goTo('budget.html')">
+        📊 Budget
+    </div>
+
+    <div class="menu-item" onclick="goTo('transactions.html')">
+        📁 Transactions
+    </div>
+
+    <div class="menu-item logout" onclick="logout()">
+        🚪 Logout
+    </div>
+</div>
+
+</div>
+</div>
+
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

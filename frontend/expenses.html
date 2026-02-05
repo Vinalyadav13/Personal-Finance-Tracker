@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expenses</title>
+<link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+    <div class="page-center">
+<div class="card wide">
+    <h2>Add Expense</h2>
+
+    <form id="expenseForm">
+        <input type="number" id="amount" placeholder="Amount" required>
+        <select id="category" required>
+    <option value="">Select category</option>
+    <option value="food">Food</option>
+    <option value="travel">Travel</option>
+    <option value="shopping">Shopping</option>
+    <option value="utilities">Utilities</option>
+    <option value="others">Others</option>
+</select>
+        <input type="date" id="date" required>
+        <input type="text" id="description" placeholder="Description (optional)">
+        <button type="submit">Add Expense</button>
+    </form>
+
+    <h3>Expense History</h3>
+    <ul id="expenseList"></ul>
+
+    <button class="secondary back-btn" onclick="goBack()">Back to Dashboard</button>
+</div>
+</div>
+
+
+<script src="js/expenses.js"></script>
+</body>
+</html>

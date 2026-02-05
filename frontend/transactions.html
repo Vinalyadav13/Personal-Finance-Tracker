@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+    <div class="page-center">
+<div class="card wide">
+    <h2>Transaction History</h2>
+
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search by type">
+        <button onclick="loadTransactions()">Search</button>
+    </div>
+
+    <ul id="transactionList"></ul>
+
+    <button class="secondary back-btn" onclick="goBack()">Back to Dashboard</button>
+</div>
+</div>
+
+
+<script src="js/transactions.js"></script>
+</body>
+</html>

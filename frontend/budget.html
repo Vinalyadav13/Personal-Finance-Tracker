@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Budget</title>
+    <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+<div class="page-center">
+<div class="card wide">
+    <h2>Set Monthly Budget</h2>
+
+    <form id="budgetForm">
+        <input type="text" id="category" placeholder="Category" required>
+        <input type="number" id="budgetAmount" placeholder="Budget Amount" required>
+        <input type="month" id="month" required>
+        <button type="submit">Set Budget</button>
+    </form>
+
+    <h3>Budget Status</h3>
+    <ul id="budgetList"></ul>
+
+    <button class="secondary back-btn" onclick="goBack()">Back to Dashboard</button>
+</div>
+</div>
+
+
+<script src="js/budget.js"></script>
+</body>
+</html>
